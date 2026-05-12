@@ -1,0 +1,109 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const youtubeId = "0td4CyWxkI0";
+---
+
+<Layout title="HARP — Jinzi Niu">
+  <div class="max-w-5xl mx-auto px-6 pt-32 pb-24">
+
+    <!-- Back -->
+    <a href="/#projects" class="text-sm text-neutral-500 hover:text-white transition-colors mb-12 inline-block">
+      ← Back to Projects
+    </a>
+
+    <!-- Header -->
+    <div class="mb-16">
+      <p class="text-neutral-500 text-sm tracking-widest uppercase mb-4">2D Music Puzzle Game · Student Project</p>
+      <h1 class="text-5xl md:text-6xl font-light text-white mb-6">HARP</h1>
+      <div class="flex gap-4 flex-wrap items-center">
+        <span class="text-neutral-500 text-sm">04.2025 – 09.2025</span>
+        <span class="text-neutral-700">·</span>
+        <a
+          href="https://majidoia.itch.io/harp"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-5 py-2 bg-white text-neutral-950 text-sm font-medium rounded-full hover:bg-neutral-200 transition-colors"
+        >
+          Play on itch.io →
+        </a>
+      </div>
+    </div>
+
+    <!-- Video (shown only when ID is set) -->
+    {youtubeId && (
+      <div class="mb-16 rounded-2xl overflow-hidden aspect-video w-full">
+        <iframe
+          class="w-full h-full"
+          src={`https://www.youtube.com/embed/${youtubeId}`}
+          title="HARP — Official Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    )}
+
+    <!-- Divider -->
+    <div class="border-t border-neutral-800 mb-16"></div>
+
+    <!-- Content -->
+    <div class="grid md:grid-cols-3 gap-12">
+
+      <!-- My Role -->
+      <div class="md:col-span-1">
+        <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-6">My Role</h2>
+        <ul class="space-y-3 text-sm text-neutral-300">
+          <li class="flex gap-2"><span class="text-neutral-700">—</span> Second Programmer</li>
+          <li class="flex gap-2"><span class="text-neutral-700">—</span> Level Design</li>
+          <li class="flex gap-2"><span class="text-neutral-700">—</span> System Design</li>
+          <li class="flex gap-2"><span class="text-neutral-700">—</span> FMOD Management</li>
+          <li class="flex gap-2"><span class="text-neutral-700">—</span> Second Artist: Assets Design</li>
+          <li class="flex gap-2"><span class="text-neutral-700">—</span> Team Project Management</li>
+        </ul>
+
+        <div class="mt-10">
+          <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-4">Tags</h2>
+          <div class="flex gap-2 flex-wrap">
+            <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">2D</span>
+            <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">Music Puzzle</span>
+            <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">FMOD</span>
+            <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">Level Design</span>
+            <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">Game Design</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="md:col-span-2">
+        <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-6">About the Project</h2>
+        <div class="text-neutral-400 leading-relaxed space-y-4">
+          <p>
+            HARP is a 2D music puzzle game developed as a student project at HTW Berlin.
+            Add your description here — what is the concept, how does music interact with the puzzles, what was the creative vision?
+          </p>
+          <p>
+            You can describe the gameplay mechanics, the visual style, your team, or the challenges you solved during development.
+          </p>
+        </div>
+
+        <!-- Play CTA -->
+        <div class="mt-12 p-6 border border-neutral-800 rounded-2xl flex items-center justify-between gap-4 flex-wrap">
+          <div>
+            <p class="text-white font-medium mb-1">Play HARP</p>
+            <p class="text-neutral-500 text-sm">Available on itch.io</p>
+          </div>
+          <a
+            href="https://majidoia.itch.io/harp"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-6 py-3 bg-white text-neutral-950 text-sm font-medium rounded-full hover:bg-neutral-200 transition-colors"
+          >
+            majidoia.itch.io/harp →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,248 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const experience = [
+  {
+    role: "Game Design Student Tutor — AI & Research Direction",
+    company: "DE:HIVE, HTW Berlin",
+    location: "Berlin, Germany",
+    period: "Apr 2026 – Present",
+    bullets: [
+      "Support research workflows integrating Claude Agent SDK and GitLab into game design pedagogy.",
+      "Develop and maintain documentation for AI-assisted game development pipelines using Claude Code sub-agents.",
+      "Assist faculty in structuring LLM-based tooling for student prototyping and design iteration.",
+    ],
+  },
+  {
+    role: "Game Student Research Assistant — LUNA Framework in Game Design",
+    company: "DE:HIVE, Europe Game Science Lab, HTW Berlin",
+    location: "Berlin, Germany",
+    period: "Apr 2025 – Apr 2026",
+    bullets: [
+      "Researched and prototyped analog and digital game terms and their structural prototypes, contributing to a systematic game development framework.",
+    ],
+  },
+  {
+    role: "Student Assistant — International Office",
+    company: "Hochschule für Technik und Wirtschaft Berlin",
+    location: "Berlin, Germany",
+    period: "Jan 2026 – Present",
+    bullets: [
+      "Manage outgoing student database under EU Erasmus+ and AIR frameworks, ensuring accuracy and compliance.",
+      "Coordinate administrative processes and communications across departments for international mobility programmes.",
+    ],
+  },
+  {
+    role: "Working Student — Product & Teaching Coordination",
+    company: "JM-Bildung",
+    location: "Berlin, Germany",
+    period: "Oct 2024 – Apr 2025",
+    bullets: [
+      "Coordinated scheduling and logistics for teaching staff across multiple concurrent programmes.",
+      "Supported product development workflows and contributed to internal process documentation.",
+    ],
+  },
+  {
+    role: "Project Manager (Part-time)",
+    company: "JM-Bildung",
+    location: "Düsseldorf, Germany (Remote)",
+    period: "Sept 2023 – Oct 2024",
+    bullets: [
+      "Led end-to-end project management for educational product initiatives across cross-functional remote teams.",
+      "Defined project scopes, managed timelines, and maintained stakeholder communications across EU locations.",
+      "Applied business analysis and negotiation skills to resolve delivery conflicts and optimise resource allocation.",
+    ],
+  },
+  {
+    role: "Sales Assistant (Part-time)",
+    company: "MC Paper Industrie",
+    location: "Berlin, Germany",
+    period: "Jun 2022 – Dec 2022",
+    bullets: [
+      "Oversaw daily branch operations, database management, and sales activities.",
+      "Trained and supervised staff, ensuring service quality and operational continuity.",
+    ],
+  },
+  {
+    role: "Secretary & Coordinator",
+    company: "Goethe-Institut e.V.",
+    location: "Beijing, China",
+    period: "Aug 2017 – Mar 2019",
+    bullets: [
+      "Provided administrative coordination and communication support in a high-traffic cultural institution.",
+      "Managed scheduling, correspondence, and event logistics for German-Chinese intercultural programmes.",
+    ],
+  },
+  {
+    role: "Project Specialist (Intern)",
+    company: "Beijing Excellent Education Technik GmbH",
+    location: "Beijing, China",
+    period: "Jun 2017 – Sept 2017",
+    bullets: [
+      "Coordinated summer camp production management and negotiation with external vendors and educators.",
+    ],
+  },
+];
+
+const education = [
+  {
+    degree: "B.Sc. Game Design",
+    school: "Hochschule für Technik und Wirtschaft Berlin (HTW Berlin)",
+    location: "Berlin, Germany",
+    period: "Sept 2024 – Present",
+    bullets: [
+      "Focus: real-time VFX (Unreal Engine 5 / Niagara), game mechanics prototyping, AI-assisted design systems.",
+      "Active researcher at DE:HIVE game design lab.",
+    ],
+  },
+  {
+    degree: "M.A. German Literature — Aesthetics & Philosophy",
+    school: "Humboldt-Universität zu Berlin",
+    location: "Berlin, Germany",
+    period: "2019 – 2023",
+    bullets: [
+      "Thesis focus: aesthetics and philosophy; developed analytical and intercultural communication competencies applicable to narrative and world design.",
+    ],
+  },
+  {
+    degree: "B.A. German Studies",
+    school: "Beijing Foreign Studies University",
+    location: "Beijing, China",
+    period: "Sept 2015 – Jun 2019",
+    bullets: [
+      "Graduated with strong foundation in cross-cultural communication, academic research, and language.",
+      "Part-time German language instructor at affiliated attachment school (Mar–Aug 2018).",
+    ],
+  },
+];
+
+const skills = [
+  {
+    category: "Game Engines",
+    items: ["Unity", "Unreal Engine 5 (Niagara VFX, Blueprints)"],
+  },
+  {
+    category: "Programming",
+    items: ["C#", "Git / GitLab", "Visual Studio", "LaTeX"],
+  },
+  {
+    category: "AI & Automation",
+    items: ["Claude Code", "Claude Agent SDK (Sub-agents)", "LLM Prompt Engineering"],
+  },
+  {
+    category: "3D & Art",
+    items: ["Maya 3D", "Substance 3D Painter", "Substance 3D Sampler", "Photoshop", "Procreate"],
+  },
+  {
+    category: "Productivity",
+    items: ["Miro", "Notion", "Microsoft Office Suite"],
+  },
+  {
+    category: "Languages",
+    items: ["Chinese (Native)", "German (C2 – Mother Tongue Level)", "English (C1 Professional)"],
+  },
+];
+---
+
+<Layout title="CV — Jinzi Niu">
+  <div class="max-w-5xl mx-auto px-6 pt-32 pb-24">
+
+    <!-- Header -->
+    <div class="mb-16 flex justify-between items-start flex-wrap gap-6">
+      <div>
+        <p class="text-neutral-500 text-sm tracking-widest uppercase mb-3">Curriculum Vitae</p>
+        <h1 class="text-5xl font-light text-white mb-2">Jinzi Niu</h1>
+        <p class="text-neutral-400">Game Designer · Researcher · Artist</p>
+      </div>
+      <a
+        href="/"
+        class="text-sm text-neutral-500 hover:text-white transition-colors mt-2"
+      >
+        ← Back to Portfolio
+      </a>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-12">
+
+      <!-- Left column: Skills -->
+      <div class="md:col-span-1 space-y-10">
+
+        <div>
+          <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-6 pb-2 border-b border-neutral-800">
+            Technical Skills
+          </h2>
+          <div class="space-y-6">
+            {skills.map(skill => (
+              <div>
+                <p class="text-xs text-neutral-500 mb-2">{skill.category}</p>
+                <ul class="space-y-1">
+                  {skill.items.map(item => (
+                    <li class="text-sm text-neutral-300">{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right column: Experience + Education -->
+      <div class="md:col-span-2 space-y-16">
+
+        <!-- Experience -->
+        <div>
+          <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-8 pb-2 border-b border-neutral-800">
+            Experience
+          </h2>
+          <div class="space-y-8">
+            {experience.map(job => (
+              <div>
+                <div class="flex justify-between items-start flex-wrap gap-1 mb-1">
+                  <h3 class="text-white font-medium text-sm">{job.role}</h3>
+                  <span class="text-neutral-600 text-xs whitespace-nowrap">{job.period}</span>
+                </div>
+                <p class="text-neutral-500 text-xs mb-3">{job.company} · {job.location}</p>
+                <ul class="space-y-1">
+                  {job.bullets.map(b => (
+                    <li class="text-neutral-400 text-sm flex gap-2">
+                      <span class="text-neutral-700 mt-1">—</span>
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-8 pb-2 border-b border-neutral-800">
+            Education
+          </h2>
+          <div class="space-y-8">
+            {education.map(edu => (
+              <div>
+                <div class="flex justify-between items-start flex-wrap gap-1 mb-1">
+                  <h3 class="text-white font-medium text-sm">{edu.degree}</h3>
+                  <span class="text-neutral-600 text-xs whitespace-nowrap">{edu.period}</span>
+                </div>
+                <p class="text-neutral-500 text-xs mb-3">{edu.school} · {edu.location}</p>
+                <ul class="space-y-1">
+                  {edu.bullets.map(b => (
+                    <li class="text-neutral-400 text-sm flex gap-2">
+                      <span class="text-neutral-700 mt-1">—</span>
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</Layout>
