@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const projects = [
+  {
+    title: "F4R",
+    subtitle: "3D Racing Game",
+    description: "A student 3D racing game built with Unreal Engine 5. Technical Artist, VFX, character design & modeling, sound design, and team project management.",
+    tags: ["Unreal Engine 5", "UE5 Blueprint", "Maya 3D", "Blender", "Procreate"],
+    year: "10.2025 – 03.2026",
+    link: "/projects/f4r",
+  },
+  {
+    title: "HARP",
+    subtitle: "2D Music Puzzle Game",
+    description: "A 2D music puzzle game built as a student project. Level design, system design, FMOD audio management, and asset design.",
+    tags: ["2D", "Music Puzzle", "FMOD", "Level Design"],
+    year: "04.2025 – 09.2025",
+    link: "/projects/harp",
+  },
+];
+---
+
+<Layout title="Game Projects — Jinzi Niu">
+  <div class="max-w-5xl mx-auto px-6 pt-28 pb-16">
+
+    <div class="mb-12">
+      <h1 class="text-4xl font-light text-white mb-2">Game Projects</h1>
+      <p class="text-neutral-500 text-sm">Student projects at HTW Berlin</p>
+    </div>
+
+    <div class="space-y-4">
+      {projects.map((project, i) => (
+        <a
+          href={project.link}
+          class="group flex gap-8 p-8 border border-neutral-800 rounded-2xl hover:border-neutral-600 hover:bg-neutral-900/50 transition-all block"
+        >
+          <span class="text-neutral-700 text-3xl font-light shrink-0">0{i + 1}</span>
+          <div class="flex-1">
+            <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
+              <div>
+                <h2 class="text-xl font-medium text-white group-hover:text-neutral-100">{project.title}</h2>
+                <p class="text-neutral-500 text-sm">{project.subtitle}</p>
+              </div>
+              <span class="text-neutral-600 text-sm">{project.year}</span>
+            </div>
+            <p class="text-neutral-400 text-sm leading-relaxed mb-4">{project.description}</p>
+            <div class="flex gap-2 flex-wrap">
+              {project.tags.map(tag => (
+                <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">{tag}</span>
+              ))}
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+  </div>
+</Layout>

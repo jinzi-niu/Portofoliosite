@@ -1,0 +1,124 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const days = [
+  { day: 1, date: "Mon, 04. Mai 2026" },
+  { day: 2, date: "Tue, 05. Mai 2026" },
+  { day: 3, date: "Wed, 06. Mai 2026" },
+  { day: 4, date: "Thu, 07. Mai 2026" },
+  { day: 5, date: "Fri, 08. Mai 2026" },
+];
+---
+
+<Layout title="NEFFY Workshop — Jinzi Niu">
+  <div class="max-w-5xl mx-auto px-6 pt-32 pb-24">
+
+    <!-- Back -->
+    <a href="/#projects" class="text-sm text-neutral-500 hover:text-white transition-colors mb-12 inline-block">
+      ← Back to Projects
+    </a>
+
+    <!-- Header -->
+    <div class="mb-16">
+      <p class="text-neutral-500 text-sm tracking-widest uppercase mb-4">Workshop · Design · BHT Berlin</p>
+      <h1 class="text-5xl md:text-6xl font-light text-white mb-4">NEFFY</h1>
+      <p class="text-neutral-500 text-sm mb-6">Turkish <span class="italic">nefes</span> = breath &nbsp;·&nbsp; 04. – 08. Mai 2026</p>
+      <div class="flex gap-2 flex-wrap">
+        <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">Design Thinking</span>
+        <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">Prototyping</span>
+        <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">UX</span>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-neutral-800 mb-16"></div>
+
+    <!-- About + Role -->
+    <div class="grid md:grid-cols-3 gap-12 mb-24">
+
+      <div class="md:col-span-1">
+        <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-6">My Role</h2>
+        <ul class="space-y-3 text-sm text-neutral-300 mb-10">
+          <li class="flex gap-2"><span class="text-neutral-700">—</span> Design</li>
+          <li class="flex gap-2"><span class="text-neutral-700">—</span> Prototyping</li>
+          <li class="flex gap-2"><span class="text-neutral-700">—</span> User Testing with Seniors</li>
+        </ul>
+
+        <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-4">Context</h2>
+        <ul class="space-y-2 text-sm text-neutral-500">
+          <li>HTW Berlin — Design Student</li>
+          <li>BHT Berlin</li>
+          <li>Neffy1: Oct 2023 – Feb 2024</li>
+          <li>Neffy2: Oct 2024 – Jan 2025</li>
+          <li>Workshop: 04.–08. Mai 2026</li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-2">
+        <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-6">About the Project</h2>
+        <div class="text-neutral-400 leading-relaxed space-y-4">
+          <p>
+            NEFFY is inspired by the Ommie robot, developed at Yale University. The prototype Neffy1
+            emerged from a practical phase at the BHT in the period October 2023 – February 2024.
+            A further practical phase developed Neffy2 from October 2024 – January 2025.
+          </p>
+          <p>
+            In this interdisciplinary project, we explored the health-promoting effects of colors and forms,
+            and learned methods from innovation management and design thinking to conceptualize products
+            and analyze user experience.
+          </p>
+          <p>
+            The concrete goal was the production of one or more prototypes of a cover system for the Neffy
+            robot, which supports breathing exercises. We also tested Neffy directly with seniors in a
+            care home — a meaningful and eye-opening experience.
+          </p>
+          <p>
+            The results will be exhibited at the <span class="text-neutral-300">Werkschau</span> and
+            within the <span class="text-neutral-300">Transferale — Zukunft findet Stadt</span> in June and July 2026.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Workshop Days -->
+    <div>
+      <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-12 pb-2 border-t border-neutral-800 pt-8">
+        Workshop Days
+      </h2>
+
+      <div class="space-y-16">
+        {days.map(({ day, date }) => (
+          <div class="grid md:grid-cols-3 gap-8 items-start">
+
+            <!-- Day label -->
+            <div>
+              <p class="text-neutral-700 text-5xl font-light mb-1">0{day}</p>
+              <p class="text-neutral-500 text-sm">{date}</p>
+            </div>
+
+            <!-- Content placeholder -->
+            <div class="md:col-span-2 space-y-6">
+              <!-- Text placeholder -->
+              <div class="p-5 border border-dashed border-neutral-800 rounded-xl text-neutral-600 text-sm italic">
+                ✏️ Add your notes for Day {day} here…
+              </div>
+
+              <!-- Image placeholders -->
+              <div class="grid grid-cols-2 gap-4">
+                <div class="aspect-video bg-neutral-900 border border-dashed border-neutral-800 rounded-xl flex items-center justify-center text-neutral-700 text-xs">
+                  + Add photo
+                </div>
+                <div class="aspect-video bg-neutral-900 border border-dashed border-neutral-800 rounded-xl flex items-center justify-center text-neutral-700 text-xs">
+                  + Add photo
+                </div>
+              </div>
+            </div>
+
+          </div>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</Layout>
