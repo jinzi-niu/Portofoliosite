@@ -1,0 +1,179 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Impro Pantho — Jinzi Niu">
+  <div class="max-w-5xl mx-auto px-6 pt-32 pb-24">
+
+    <!-- Back -->
+    <a href="/game-projects" class="text-sm text-neutral-500 hover:text-white transition-colors mb-12 inline-block">
+      ← Back to Game Projects
+    </a>
+
+    <!-- Header with cover image -->
+    <div class="mb-16 relative rounded-2xl overflow-hidden">
+      <img src="/images/outdoor-cover.jpg" alt="Impro Pantho" class="w-full h-72 object-cover" />
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="absolute bottom-0 left-0 p-8">
+        <p class="text-white/70 text-sm tracking-widest uppercase mb-2">Outdoor Game · Improvisation</p>
+        <h1 class="text-5xl md:text-6xl font-light text-white mb-2">Impro Pantho</h1>
+        <p class="text-white/80 text-lg mb-4">Improvisation Pantomime</p>
+        <div class="flex gap-2 flex-wrap">
+          <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">Outdoor Game</span>
+          <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">Improvisation</span>
+          <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">Physical Theatre</span>
+          <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">Teamwork</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-neutral-800 mb-16"></div>
+
+    <div class="grid md:grid-cols-3 gap-12">
+
+      <!-- Left: Team -->
+      <div class="md:col-span-1">
+        <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-6">Team</h2>
+        <ul class="space-y-2 text-sm text-neutral-300">
+          <li class="flex gap-2"><span class="text-neutral-700">—</span> Jinzi</li>
+          <li class="flex gap-2"><span class="text-neutral-700">—</span> Elena</li>
+          <li class="flex gap-2"><span class="text-neutral-700">—</span> Jesper</li>
+          <li class="flex gap-2"><span class="text-neutral-700">—</span> Lili</li>
+          <li class="flex gap-2"><span class="text-neutral-700">—</span> Bao</li>
+        </ul>
+      </div>
+
+      <!-- Right: Game Rules -->
+      <div class="md:col-span-2 space-y-10">
+
+        <div>
+          <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-6">About the Game</h2>
+          <p class="text-neutral-400 leading-relaxed">
+            Impro Pantho is an outdoor improvisation pantomime game that combines physical theatre,
+            non-lingual communication, and collaborative storytelling. Players must convey and interpret
+            actions using only body language — no words allowed.
+          </p>
+        </div>
+
+        <!-- Game diagram -->
+        <div>
+          <img
+            src="/images/outdoor-game.png"
+            alt="Impro Pantho game process diagram"
+            class="w-full rounded-2xl border border-neutral-800"
+          />
+        </div>
+
+        <div>
+          <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-6">How to Play</h2>
+          <div class="space-y-6 text-neutral-400 leading-relaxed">
+
+            <div class="flex gap-4">
+              <span class="text-white font-medium text-sm w-6 shrink-0">1.</span>
+              <p>Player <strong class="text-white">A</strong> secretly chooses an action — a combination of an <em>activity</em> and an <em>object</em> from the surrounding environment — and begins acting it out silently.</p>
+            </div>
+
+            <div class="flex gap-4">
+              <span class="text-white font-medium text-sm w-6 shrink-0">2.</span>
+              <p>The other players line up in a row. <strong class="text-white">A</strong> taps <strong class="text-white">B</strong> and performs the action. Once <strong class="text-white">B</strong> believes they have understood it, both tap <strong class="text-white">C</strong> together.</p>
+            </div>
+
+            <div class="flex gap-4">
+              <span class="text-white font-medium text-sm w-6 shrink-0">3.</span>
+              <p><strong class="text-white">A</strong> and <strong class="text-white">B</strong> now act out the scene together for <strong class="text-white">C</strong>. When <strong class="text-white">C</strong> feels confident enough, <strong class="text-white">D</strong> is tapped — and the group grows one by one.</p>
+            </div>
+
+            <div class="flex gap-4">
+              <span class="text-white font-medium text-sm w-6 shrink-0">4.</span>
+              <p>Only <strong class="text-white">A</strong> knows the original action and can subtly guide the group. This continues until the last person joins — they must watch the full scene and guess the original action as precisely as possible.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Examples -->
+        <div>
+          <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-4">Example Actions</h2>
+          <div class="flex gap-3 flex-wrap">
+            <span class="px-4 py-2 border border-neutral-800 text-neutral-400 text-sm rounded-xl">Felling a tree</span>
+            <span class="px-4 py-2 border border-neutral-800 text-neutral-400 text-sm rounded-xl">Swimming in a well</span>
+            <span class="px-4 py-2 border border-neutral-800 text-neutral-400 text-sm rounded-xl">Two bicycles colliding</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="mt-24">
+      <div class="border-t border-neutral-800 pt-12 mb-8">
+        <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-1">Game Create & Playtest</h2>
+        <p class="text-white text-lg font-light">Gallery</p>
+      </div>
+
+      <!-- Scrollable image strip -->
+      <div class="overflow-x-auto pb-4" style="scrollbar-width: thin; scrollbar-color: #404040 transparent;">
+        <div class="flex gap-4" style="width: max-content;">
+          {[
+            "1.jpg","2.JPG","5.JPG","Bridge.JPG","COVER.JPG","OutDoor1.JPG",
+            "Playtest4.JPG","Playtest5.JPG","Playtest7.JPG",
+            "Playtext2.JPG","happy4.JPG","happy5.JPG"
+          ].map(img => (
+            <img
+              src={`/images/outdoor-gallery/${img}`}
+              alt="Outdoor game photo"
+              class="h-72 w-auto rounded-xl object-cover flex-shrink-0 cursor-pointer hover:opacity-90 transition-opacity"
+              onclick="openLightbox(this.src)"
+            />
+          ))}
+        </div>
+      </div>
+      <p class="text-neutral-600 text-xs mt-3">← Scroll · Click to enlarge →</p>
+    </div>
+
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 flex items-center justify-center hidden" onclick="closeLightbox()">
+    <button onclick="closeLightbox()" class="absolute top-6 right-8 text-white text-3xl hover:text-neutral-400 transition-colors">✕</button>
+    <button id="lb-prev" onclick="event.stopPropagation(); shiftLightbox(-1)" class="absolute left-6 text-white text-3xl hover:text-neutral-400 transition-colors px-2">‹</button>
+    <button id="lb-next" onclick="event.stopPropagation(); shiftLightbox(1)"  class="absolute right-16 text-white text-3xl hover:text-neutral-400 transition-colors px-2">›</button>
+    <img id="lightbox-img" src="" alt="" class="max-h-[90vh] max-w-[90vw] rounded-xl object-contain" onclick="event.stopPropagation()" />
+  </div>
+
+  <script>
+    const images = [
+      "1.jpg","2.JPG","5.JPG","Bridge.JPG","COVER.JPG","OutDoor1.JPG",
+      "Playtest4.JPG","Playtest5.JPG","Playtest7.JPG",
+      "Playtext2.JPG","happy4.JPG","happy5.JPG"
+    ].map(f => `/images/outdoor-gallery/${f}`);
+
+    let current = 0;
+
+    (window as any).openLightbox = (src: string) => {
+      current = images.indexOf(src);
+      (document.getElementById('lightbox-img') as HTMLImageElement).src = src;
+      document.getElementById('lightbox')!.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    };
+
+    (window as any).closeLightbox = () => {
+      document.getElementById('lightbox')!.classList.add('hidden');
+      document.body.style.overflow = '';
+    };
+
+    (window as any).shiftLightbox = (dir: number) => {
+      current = (current + dir + images.length) % images.length;
+      (document.getElementById('lightbox-img') as HTMLImageElement).src = images[current];
+    };
+
+    document.addEventListener('keydown', (e) => {
+      if (!document.getElementById('lightbox')!.classList.contains('hidden')) {
+        if (e.key === 'ArrowRight') (window as any).shiftLightbox(1);
+        if (e.key === 'ArrowLeft')  (window as any).shiftLightbox(-1);
+        if (e.key === 'Escape')     (window as any).closeLightbox();
+      }
+    });
+  </script>
+</Layout>

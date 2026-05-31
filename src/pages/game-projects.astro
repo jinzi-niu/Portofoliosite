@@ -9,6 +9,7 @@ const projects = [
     tags: ["Unreal Engine 5", "UE5 Blueprint", "Maya 3D", "Blender", "Procreate"],
     year: "10.2025 – 03.2026",
     link: "/projects/f4r",
+    image: "/images/f4r-title.png",
   },
   {
     title: "HARP",
@@ -17,6 +18,16 @@ const projects = [
     tags: ["2D", "Music Puzzle", "FMOD", "Level Design"],
     year: "04.2025 – 09.2025",
     link: "/projects/harp",
+    image: "/images/harp-title.png",
+  },
+  {
+    title: "Impro Pantho",
+    subtitle: "Outdoor Game",
+    description: "An outdoor improvisation pantomime game combining physical theatre and non-lingual communication. Players act out secret actions and pass them along a chain — the last player must guess the original.",
+    tags: ["Outdoor Game", "Improvisation", "Physical Theatre", "Teamwork"],
+    year: "2025",
+    link: "/projects/outdoor-game",
+    image: "/images/outdoor-cover.jpg",
   },
 ];
 ---
@@ -33,22 +44,31 @@ const projects = [
       {projects.map((project, i) => (
         <a
           href={project.link}
-          class="group flex gap-8 p-8 border border-neutral-800 rounded-2xl hover:border-neutral-600 hover:bg-neutral-900/50 transition-all block"
+          class="group relative overflow-hidden flex gap-8 border border-neutral-800 rounded-2xl hover:border-neutral-600 transition-all block"
         >
-          <span class="text-neutral-700 text-3xl font-light shrink-0">0{i + 1}</span>
-          <div class="flex-1">
-            <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
-              <div>
-                <h2 class="text-xl font-medium text-white group-hover:text-neutral-100">{project.title}</h2>
-                <p class="text-neutral-500 text-sm">{project.subtitle}</p>
+          <!-- Background image -->
+          <div class="absolute inset-0">
+            <img src={project.image} alt="" class="w-full h-full object-cover opacity-100 transition-opacity" />
+            <div class="absolute inset-0 bg-gradient-to-r from-neutral-950/60 via-neutral-950/30 to-neutral-950/10"></div>
+          </div>
+
+          <!-- Content -->
+          <div class="relative z-10 flex gap-8 p-8 w-full">
+            <span class="text-neutral-600 text-3xl font-light shrink-0">0{i + 1}</span>
+            <div class="flex-1">
+              <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
+                <div>
+                  <h2 class="text-xl font-medium text-white">{project.title}</h2>
+                  <p class="text-neutral-400 text-sm">{project.subtitle}</p>
+                </div>
+                <span class="text-neutral-500 text-sm">{project.year}</span>
               </div>
-              <span class="text-neutral-600 text-sm">{project.year}</span>
-            </div>
-            <p class="text-neutral-400 text-sm leading-relaxed mb-4">{project.description}</p>
-            <div class="flex gap-2 flex-wrap">
-              {project.tags.map(tag => (
-                <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">{tag}</span>
-              ))}
+              <p class="text-neutral-300 text-sm leading-relaxed mb-4">{project.description}</p>
+              <div class="flex gap-2 flex-wrap">
+                {project.tags.map(tag => (
+                  <span class="px-3 py-1 bg-white/10 text-neutral-300 text-xs rounded-full">{tag}</span>
+                ))}
+              </div>
             </div>
           </div>
         </a>
