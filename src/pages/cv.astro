@@ -1,0 +1,216 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const experience = [
+  {
+    role: "Game Design Student Tutor — AI & Research Direction",
+    company: "DE:HIVE, HTW Berlin",
+    location: "Berlin, Germany",
+    period: "Apr 2026 – Present",
+    initials: "DH", color: "#7C3AED", logo: "/images/logos/dehive.png",
+    bullets: [
+      "Support research workflows integrating Claude Agent SDK and GitLab into game design pedagogy.",
+      "Develop and maintain documentation for AI-assisted game development pipelines using Claude Code sub-agents.",
+      "Assist faculty in structuring LLM-based tooling for student prototyping and design iteration.",
+    ],
+  },
+  {
+    role: "Game Student Research Assistant — LUNA Framework",
+    company: "DE:HIVE, HTW Berlin",
+    location: "Berlin, Germany",
+    period: "Apr 2025 – Apr 2026",
+    initials: "DH", color: "#7C3AED", logo: "/images/logos/dehive.png",
+    bullets: [
+      "Researched and prototyped analog and digital game terms, contributing to a systematic game development framework.",
+    ],
+  },
+  {
+    role: "Student Assistant — International Office",
+    company: "HTW Berlin",
+    location: "Berlin, Germany",
+    period: "Jan 2026 – Present",
+    initials: "HTW", color: "#0369A1", logo: "/images/logos/htw.png",
+    bullets: [
+      "Manage outgoing student database under EU Erasmus+ and EU On AIR frameworks.",
+      "Coordinate administrative processes for international mobility programmes.",
+    ],
+  },
+  {
+    role: "Working Student — Product & Teaching Coordination",
+    company: "JM-Bildung",
+    location: "Berlin, Germany",
+    period: "Oct 2024 – Apr 2025",
+    initials: "JM", color: "#0F766E", logo: "/images/logos/jm.png",
+    bullets: [
+      "Coordinated scheduling and logistics for teaching staff across multiple programmes.",
+    ],
+  },
+  {
+    role: "Project Manager (Part-time)",
+    company: "JM-Bildung",
+    location: "Düsseldorf, Germany (Remote)",
+    period: "Sept 2023 – Oct 2024",
+    initials: "JM", color: "#0F766E", logo: "/images/logos/jm.png",
+    bullets: [
+      "Led end-to-end project management for German Languages product initiatives across remote teams.",
+    ],
+  },
+  {
+    role: "Sales Assistant (Part-time)",
+    company: "MC Paper Industrie",
+    location: "Berlin, Germany",
+    period: "Jun – Dec 2022",
+    initials: "MC", color: "#B45309", logo: "/images/logos/mc.png",
+    bullets: [],
+  },
+  {
+    role: "Secretary & Coordinator (Part-time)",
+    company: "Goethe-Institut e.V.",
+    location: "Beijing, China",
+    period: "Aug 2017 – Mar 2019",
+    initials: "GI", color: "#0F4C81", logo: "/images/logos/goethe.png",
+    bullets: [
+      "Managed language course registrations and provided student advisory services.",
+      "Maintained the financial expenditure database for the Goethe-Institut Beijing branch.",
+    ],
+  },
+  {
+    role: "Project Specialist (Intern)",
+    company: "Joy Education International",
+    location: "Beijing, China",
+    period: "Jun – Sept 2017",
+    initials: "JE", color: "#BE185D", logo: "/images/logos/joy-education.jpg",
+    bullets: [
+      "Led children's outdoor practice activities during summer camp, including visits to World Park and cultural exchange events hosted by various embassies.",
+    ],
+  },
+];
+
+const education = [
+  {
+    degree: "B.Sc. Game Design",
+    school: "HTW Berlin",
+    period: "Sept 2024 – Present",
+  },
+  {
+    degree: "M.A. German Literature — Aesthetics & Philosophy",
+    school: "Humboldt-Universität zu Berlin",
+    period: "2019 – 2023",
+  },
+  {
+    degree: "B.A. German Studies",
+    school: "Beijing Foreign Studies University",
+    period: "Sept 2015 – Jun 2019",
+  },
+];
+
+const skills = [
+  { category: "Game Engines", items: ["Unity", "Unreal Engine 5 (Niagara VFX, Blueprints)"] },
+  { category: "Programming", items: ["C#", "Git / GitLab", "Visual Studio"] },
+  { category: "AI & Automation", items: ["Claude Code", "Claude Agent SDK", "LLM Prompt Engineering"] },
+  { category: "3D & Art", items: ["Maya 3D", "Substance 3D Painter", "Photoshop", "Procreate"] },
+  { category: "Languages", items: ["Chinese (Native)", "German (C2)", "English (C1)"] },
+];
+---
+
+<Layout title="Jinzi Niu">
+  <div class="max-w-5xl mx-auto px-6 pt-28 pb-16">
+
+    <!-- Header -->
+    <div class="flex justify-between items-end flex-wrap gap-4 mb-10 pb-8 border-b border-neutral-800">
+      <div class="flex items-center gap-6">
+        <img
+          src="/images/profile.png"
+          alt="Jinzi Niu"
+          class="w-48 h-48 rounded-full object-cover shrink-0"
+          style="object-position: center 15%;"
+        />
+        <div>
+          <h1 class="text-4xl font-light text-white mb-1">Jinzi Niu</h1>
+          <p class="text-neutral-400 text-sm">Game Design Student · Technical Artist · based Berlin</p>
+        </div>
+      </div>
+      <div class="space-y-1 text-right">
+        <a href="https://www.linkedin.com/in/jinzi-niu-b94148280" target="_blank" class="text-blue-500 hover:text-blue-300 transition-colors text-lg font-medium block">LinkedIn</a>
+        <p class="text-sm text-blue-300/60">jinziniu1310@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- Left: Skills + Education -->
+      <div class="md:col-span-1 space-y-8">
+
+        <div>
+          <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-4">Skills</h2>
+          <div class="space-y-4">
+            {skills.map(skill => (
+              <div>
+                <p class="text-xs text-neutral-600 mb-1">{skill.category}</p>
+                <p class="text-sm text-neutral-300">{skill.items.join(" · ")}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-4 pt-4 border-t border-neutral-800">Education</h2>
+          <div class="space-y-4">
+            {education.map(edu => (
+              <div>
+                <p class="text-sm text-neutral-300">{edu.degree}</p>
+                <p class="text-xs text-neutral-500">{edu.school}</p>
+                <p class="text-xs text-neutral-600">{edu.period}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Experience -->
+      <div class="md:col-span-2">
+        <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-6">Experience</h2>
+        <div class="space-y-6">
+          {experience.map(job => (
+            <div class="flex gap-4">
+              <!-- Logo avatar -->
+              {job.logo ? (
+                <img
+                  src={job.logo}
+                  alt={job.company}
+                  class="shrink-0 w-9 h-9 rounded-lg object-cover mt-0.5 bg-white"
+                />
+              ) : (
+                <div
+                  class="shrink-0 w-9 h-9 rounded-lg flex items-center justify-center text-white font-semibold mt-0.5"
+                  style={`background-color: ${job.color}; font-size: ${job.initials.length > 2 ? '9px' : '11px'};`}
+                >
+                  {job.initials}
+                </div>
+              )}
+              <!-- Content -->
+              <div class="flex-1">
+                <div class="flex justify-between items-start gap-2 flex-wrap">
+                  <p class="text-sm text-white font-medium">{job.role}</p>
+                  <span class="text-xs text-neutral-600 whitespace-nowrap">{job.period}</span>
+                </div>
+                <p class="text-xs text-neutral-500 mb-1">{job.company} · {job.location}</p>
+                {job.bullets.length > 0 && (
+                  <ul class="space-y-0.5 mt-1">
+                    {job.bullets.map(b => (
+                      <li class="text-xs text-neutral-400 flex gap-2">
+                        <span class="text-neutral-700">—</span>{b}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</Layout>

@@ -13,17 +13,17 @@ const youtubeId = "0td4CyWxkI0";
   <div class="max-w-5xl mx-auto px-6 pt-32 pb-24">
 
     <!-- Back -->
-    <a href="/#projects" class="text-sm text-neutral-500 hover:text-white transition-colors mb-12 inline-block">
+    <a href="/" class="text-sm text-white hover:text-white/60 transition-colors mb-12 inline-block">
       ← Back to Projects
     </a>
 
     <!-- Header -->
     <div class="mb-16">
-      <p class="text-neutral-500 text-sm tracking-widest uppercase mb-4">2D Music Puzzle Game · Student Project</p>
+      <p class="text-white/60 text-sm tracking-widest uppercase mb-4">2D Music Puzzle Game · Student Project</p>
       <h1 class="text-5xl md:text-6xl font-light text-white mb-6">HARP</h1>
       <div class="flex gap-4 flex-wrap items-center">
-        <span class="text-neutral-500 text-sm">04.2025 – 09.2025</span>
-        <span class="text-neutral-700">·</span>
+        <span class="text-white/60 text-sm">04.2025 – 09.2025</span>
+        <span class="text-white/30">·</span>
         <a
           href="https://majidoia.itch.io/harp"
           target="_blank"
@@ -35,7 +35,7 @@ const youtubeId = "0td4CyWxkI0";
       </div>
     </div>
 
-    <!-- Video (shown only when ID is set) -->
+    <!-- Video -->
     {youtubeId && (
       <div class="mb-16 rounded-2xl overflow-hidden aspect-video w-full">
         <iframe
@@ -50,53 +50,54 @@ const youtubeId = "0td4CyWxkI0";
     )}
 
     <!-- Divider -->
-    <div class="border-t border-neutral-800 mb-16"></div>
+    <div class="border-t border-white/20 mb-16"></div>
 
     <!-- Content -->
     <div class="grid md:grid-cols-3 gap-12">
 
       <!-- My Role -->
       <div class="md:col-span-1">
-        <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-6">My Role</h2>
-        <ul class="space-y-3 text-sm text-neutral-300">
-          <li class="flex gap-2"><span class="text-neutral-700">—</span> Second Programmer</li>
-          <li class="flex gap-2"><span class="text-neutral-700">—</span> Level Design</li>
-          <li class="flex gap-2"><span class="text-neutral-700">—</span> System Design</li>
-          <li class="flex gap-2"><span class="text-neutral-700">—</span> FMOD Management</li>
-          <li class="flex gap-2"><span class="text-neutral-700">—</span> Second Artist: Assets Design</li>
-          <li class="flex gap-2"><span class="text-neutral-700">—</span> Team Project Management</li>
+        <h2 class="text-xs uppercase tracking-widest text-white mb-6">My Role</h2>
+        <ul class="space-y-3 text-sm text-white">
+          <li class="flex gap-2"><span class="text-white/40">—</span> Second Programmer</li>
+          <li class="flex gap-2"><span class="text-white/40">—</span> Level Design</li>
+          <li class="flex gap-2"><span class="text-white/40">—</span> System Design</li>
+          <li class="flex gap-2"><span class="text-white/40">—</span> FMOD Management</li>
+          <li class="flex gap-2"><span class="text-white/40">—</span> Second Artist: Assets Design</li>
+          <li class="flex gap-2"><span class="text-white/40">—</span> Team Project Management</li>
         </ul>
 
         <div class="mt-10">
-          <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-4">Tags</h2>
+          <h2 class="text-xs uppercase tracking-widest text-white mb-4">Tags</h2>
           <div class="flex gap-2 flex-wrap">
-            <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">2D</span>
-            <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">Music Puzzle</span>
-            <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">FMOD</span>
-            <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">Level Design</span>
-            <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">Game Design</span>
+            <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">2D</span>
+            <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">Music Puzzle</span>
+            <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">FMOD</span>
+            <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">Level Design</span>
+            <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">Game Design</span>
           </div>
         </div>
       </div>
 
       <!-- Description -->
       <div class="md:col-span-2">
-        <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-6">About the Project</h2>
-        <div class="text-neutral-400 leading-relaxed space-y-4">
+        <h2 class="text-xs uppercase tracking-widest text-white mb-6">About the Project</h2>
+        <div class="text-white leading-relaxed space-y-4">
           <p>
             HARP is a 2D music puzzle game developed as a student project at HTW Berlin.
-            Add your description here — what is the concept, how does music interact with the puzzles, what was the creative vision?
+            The player controls HARP through musical scales, interacting with the environment
+            to uncover its secrets. The game features 4 levels in total.
           </p>
           <p>
-            You can describe the gameplay mechanics, the visual style, your team, or the challenges you solved during development.
+            This was our 3rd semester assignment, built primarily with Unity and FMOD.
           </p>
         </div>
 
         <!-- Play CTA -->
-        <div class="mt-12 p-6 border border-neutral-800 rounded-2xl flex items-center justify-between gap-4 flex-wrap">
+        <div class="mt-12 p-6 border border-white/20 rounded-2xl flex items-center justify-between gap-4 flex-wrap">
           <div>
             <p class="text-white font-medium mb-1">Play HARP</p>
-            <p class="text-neutral-500 text-sm">Available on itch.io</p>
+            <p class="text-white/50 text-sm">Available on itch.io</p>
           </div>
           <a
             href="https://majidoia.itch.io/harp"
@@ -110,5 +111,103 @@ const youtubeId = "0td4CyWxkI0";
       </div>
 
     </div>
+    <!-- Prototype -->
+    <div class="mt-24">
+      <div class="border-t border-white/20 pt-12 mb-8">
+        <h2 class="text-xs uppercase tracking-widest text-white">Prototype</h2>
+      </div>
+      <div class="overflow-x-auto pb-4" style="scrollbar-width: thin; scrollbar-color: #ffffff40 transparent;">
+        <div class="flex gap-4" style="width: max-content;">
+          <img src="/images/harp-work/proto1.jpg" alt="Prototype 1" class="h-80 w-auto rounded-xl object-contain flex-shrink-0 cursor-pointer hover:opacity-90 transition-opacity" onclick="openHarpLightbox(this.src)" />
+          <img src="/images/harp-work/proto2.jpg" alt="Prototype 2" class="h-80 w-auto rounded-xl object-contain flex-shrink-0 cursor-pointer hover:opacity-90 transition-opacity" onclick="openHarpLightbox(this.src)" />
+          <img src="/images/harp-work/proto3.jpg" alt="Prototype 3" class="h-80 w-auto rounded-xl object-contain flex-shrink-0 cursor-pointer hover:opacity-90 transition-opacity" onclick="openHarpLightbox(this.src)" />
+          <img src="/images/harp-work/proto4.jpg" alt="Prototype 4" class="h-80 w-auto rounded-xl object-contain flex-shrink-0 cursor-pointer hover:opacity-90 transition-opacity" onclick="openHarpLightbox(this.src)" />
+        </div>
+      </div>
+      <p class="text-white/30 text-xs mt-3">← Scroll · Click to enlarge →</p>
+    </div>
+
+    <!-- Full width content -->
+    <div class="mt-24">
+      <div class="border-t border-white/20 pt-12 mb-10">
+        <h2 class="text-xs uppercase tracking-widest text-white">Gallery</h2>
+      </div>
+      <div class="flex flex-col gap-12">
+        <img src="/images/harp-work/h1.png" alt="HARP 1" class="w-full object-contain rounded-2xl" />
+        <img src="/images/harp-work/h2.png" alt="HARP 2" class="w-full object-contain rounded-2xl" />
+        <img src="/images/harp-work/h3.png" alt="HARP 3" class="w-full object-contain rounded-2xl" />
+        <img src="/images/harp-work/h4.png" alt="HARP 4" class="w-full object-contain rounded-2xl" />
+        <img src="/images/harp-work/h5.png" alt="HARP 5" class="w-full object-contain rounded-2xl" />
+        <img src="/images/harp-work/h6.png" alt="HARP 6" class="w-full object-contain rounded-2xl" />
+      </div>
+    </div>
+
+    <!-- Personal Design Assets -->
+    <div class="mt-24">
+      <div class="border-t border-white/20 pt-12 mb-10">
+        <h2 class="text-xs uppercase tracking-widest text-white">Personal Design Assets</h2>
+      </div>
+      <div class="flex flex-col gap-12">
+        <img src="/images/harp-work/personal_1.png"   alt="Asset 1"   class="w-full object-contain rounded-2xl" />
+        <img src="/images/harp-work/personal_2.png"   alt="Asset 2"   class="w-full object-contain rounded-2xl" />
+        <img src="/images/harp-work/personal_3.png"   alt="Asset 3"   class="w-full object-contain rounded-2xl" />
+        <img src="/images/harp-work/personal_3.1.png" alt="Asset 3.1" class="w-full object-contain rounded-2xl" />
+        <img src="/images/harp-work/personal_4.png"   alt="Asset 4"   class="w-full object-contain rounded-2xl" />
+        <img src="/images/harp-work/personal_4.1.png" alt="Asset 4.1" class="w-full object-contain rounded-2xl" />
+        <img src="/images/harp-work/personal_5.png"   alt="Asset 5"   class="w-full object-contain rounded-2xl" />
+        <img src="/images/harp-work/personal_6.png"   alt="Asset 6"   class="w-full object-contain rounded-2xl" />
+        <img src="/images/harp-work/personal_7.png"   alt="Asset 7"   class="w-full object-contain rounded-2xl" />
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div class="mt-24">
+      <div class="border-t border-white/20 pt-12 mb-10">
+        <h2 class="text-xs uppercase tracking-widest text-white">Team MAJIDOIA</h2>
+        <p class="text-white/60 text-sm mt-1">Marika · Mai · Jinzi · Dohyun · Ian</p>
+      </div>
+      <img src="/images/harp-work/team.png" alt="HARP Team" class="w-full object-contain rounded-2xl" />
+    </div>
+
   </div>
+
+  <!-- Lightbox -->
+  <div id="harp-lightbox" class="fixed inset-0 z-50 bg-black/90 flex items-center justify-center hidden" onclick="closeHarpLightbox()">
+    <button onclick="closeHarpLightbox()" class="absolute top-6 right-8 text-white text-3xl hover:text-white/50 transition-colors">✕</button>
+    <button onclick="event.stopPropagation(); shiftHarp(-1)" class="absolute left-6 text-white text-3xl hover:text-white/50 transition-colors px-2">‹</button>
+    <button onclick="event.stopPropagation(); shiftHarp(1)"  class="absolute right-8 text-white text-3xl hover:text-white/50 transition-colors px-2">›</button>
+    <img id="harp-lightbox-img" src="" alt="" class="max-h-[90vh] max-w-[90vw] rounded-xl object-contain" onclick="event.stopPropagation()" />
+  </div>
+
+  <script>
+    const harpImages = [
+      "/images/harp-work/proto1.jpg",
+      "/images/harp-work/proto2.jpg",
+      "/images/harp-work/proto3.jpg",
+      "/images/harp-work/proto4.jpg",
+    ];
+    let harpCurrent = 0;
+
+    (window as any).openHarpLightbox = (src: string) => {
+      harpCurrent = harpImages.indexOf(src);
+      (document.getElementById('harp-lightbox-img') as HTMLImageElement).src = src;
+      document.getElementById('harp-lightbox')!.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    };
+    (window as any).closeHarpLightbox = () => {
+      document.getElementById('harp-lightbox')!.classList.add('hidden');
+      document.body.style.overflow = '';
+    };
+    (window as any).shiftHarp = (dir: number) => {
+      harpCurrent = (harpCurrent + dir + harpImages.length) % harpImages.length;
+      (document.getElementById('harp-lightbox-img') as HTMLImageElement).src = harpImages[harpCurrent];
+    };
+    document.addEventListener('keydown', (e) => {
+      if (!document.getElementById('harp-lightbox')!.classList.contains('hidden')) {
+        if (e.key === 'ArrowRight') (window as any).shiftHarp(1);
+        if (e.key === 'ArrowLeft')  (window as any).shiftHarp(-1);
+        if (e.key === 'Escape')     (window as any).closeHarpLightbox();
+      }
+    });
+  </script>
 </Layout>

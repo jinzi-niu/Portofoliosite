@@ -15,18 +15,18 @@ const { title = 'Jinzi Niu — Portfolio' } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio of Jinzi Niu — Designer & Researcher" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <title>{title}</title>
   </head>
   <body class="bg-neutral-950 text-neutral-100 font-sans antialiased">
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800">
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-neutral-800" style="background: linear-gradient(to right, #D1470B 0%, #D1470B 20%, #E97700 20%, #E97700 40%, #FFB703 40%, #FFB703 60%, #8ECAE6 60%, #8ECAE6 80%, #2671BC 80%, #2671BC 100%)">
       <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="/" class="text-sm font-medium tracking-widest uppercase text-neutral-400 hover:text-white transition-colors">
-          Jinzi Niu
+        <a href="/" class="text-sm font-medium text-neutral-400 hover:text-white transition-colors">
+          Game Projects von Jinzi Niu
         </a>
-        <div class="flex gap-8 text-sm text-neutral-400">
-          <a href="/" class="hover:text-white transition-colors">CV</a>
-          <a href="/game-projects" class="hover:text-white transition-colors">Game Projects</a>
-        </div>
+        <a href="/cv" class="text-base font-bold hover:opacity-80 transition-opacity" style="color: #F8F3EC;">CV and Contact</a>
       </div>
     </nav>
 
