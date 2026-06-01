@@ -48,71 +48,129 @@ import Layout from '../../layouts/Layout.astro';
     </div>
 
     <!-- Divider -->
-    <div class="border-t border-white/20 mb-16"></div>
+    <div class="border-t border-white/20 mb-8"></div>
 
-    <!-- Content -->
-    <div class="grid md:grid-cols-3 gap-12">
+    <!-- Content — compact -->
+    <div class="grid md:grid-cols-3 gap-6">
 
       <!-- My Role -->
       <div class="md:col-span-1">
-        <h2 class="text-xs uppercase tracking-widest text-white mb-6">My Role</h2>
-        <p class="text-xs text-white/70 uppercase tracking-wider mb-3">Technical Artist</p>
-        <ul class="space-y-3 text-sm text-white mb-6">
+        <h2 class="text-xs uppercase tracking-widest text-white mb-3">My Role</h2>
+        <p class="text-xs text-white/70 uppercase tracking-wider mb-2">Technical Artist</p>
+        <ul class="space-y-1 text-xs text-white mb-4">
           <li class="flex gap-2"><span class="text-white/50">—</span> Skybox, Skybox Cubemaps & VFX</li>
           <li class="flex gap-2"><span class="text-white/50">—</span> Environmental & Character VFX</li>
           <li class="flex gap-2"><span class="text-white/50">—</span> Character Design, Modeling & Materials</li>
           <li class="flex gap-2"><span class="text-white/50">—</span> Environment Materials</li>
           <li class="flex gap-2"><span class="text-white/50">—</span> Game Color Palette</li>
-          <li class="flex gap-2"><span class="text-white/50">—</span> <span>Sub Ability BP Programmer <span class="text-white/50 text-xs">(cancelled in final)</span></span></li>
+          <li class="flex gap-2"><span class="text-white/50">—</span> <span>Sub Ability BP Programmer <span class="text-white/40 text-xs">(cancelled in final)</span></span></li>
           <li class="flex gap-2"><span class="text-white/50">—</span> Team Project Management</li>
         </ul>
-        <p class="text-xs text-white/70 uppercase tracking-wider mb-3">Sound Design</p>
-        <ul class="space-y-3 text-sm text-white">
+        <p class="text-xs text-white/70 uppercase tracking-wider mb-2">Sound Design</p>
+        <ul class="space-y-1 text-xs text-white mb-4">
           <li class="flex gap-2"><span class="text-white/50">—</span> Background Music</li>
         </ul>
-
-        <div class="mt-10">
-          <h2 class="text-xs uppercase tracking-widest text-white mb-4">Tags</h2>
-          <div class="flex gap-2 flex-wrap">
-            <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">Unreal Engine 5</span>
-            <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">UE5 Blueprint</span>
-            <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">Maya 3D</span>
-            <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">Blender</span>
-            <span class="px-3 py-1 bg-white/10 text-white text-xs rounded-full">Procreate</span>
-          </div>
+        <div class="flex gap-2 flex-wrap">
+          <span class="px-2 py-0.5 bg-white/10 text-white text-xs rounded-full">Unreal Engine 5</span>
+          <span class="px-2 py-0.5 bg-white/10 text-white text-xs rounded-full">UE5 Blueprint</span>
+          <span class="px-2 py-0.5 bg-white/10 text-white text-xs rounded-full">Maya 3D</span>
+          <span class="px-2 py-0.5 bg-white/10 text-white text-xs rounded-full">Blender</span>
+          <span class="px-2 py-0.5 bg-white/10 text-white text-xs rounded-full">Procreate</span>
         </div>
       </div>
 
       <!-- Description -->
       <div class="md:col-span-2">
-        <h2 class="text-xs uppercase tracking-widest text-white mb-6">About the Project</h2>
-        <div class="text-white leading-relaxed space-y-4">
+        <h2 class="text-xs uppercase tracking-widest text-white mb-3">About the Project</h2>
+        <div class="text-white/90 text-sm leading-relaxed space-y-2 mb-6">
           <p>
-            F4R is a 3D racing game developed as a student project at HTW Berlin.
-            Add your description here — what is the game about, what was the concept, what makes it special?
+            F4R is a 3D racing game developed as our 4th semester 3D Game assignment at HTW Berlin.
+            The player controls <span class="italic">Floaty</span> and must collect 10 Collectibles
+            scattered across the level to complete the game.
           </p>
-          <p>
-            You can describe the gameplay, the visual style, the team, or any challenges you solved.
-          </p>
+          <p>Built with Unreal Engine 5, Maya, Blender, and Procreate.</p>
         </div>
 
         <!-- Play CTA -->
-        <div class="mt-12 p-6 border border-white/20 rounded-2xl flex items-center justify-between gap-4 flex-wrap">
+        <div class="p-4 border border-white/20 rounded-xl flex items-center justify-between gap-4 flex-wrap">
           <div>
-            <p class="text-white font-medium mb-1">Play F4R</p>
-            <p class="text-white/60 text-sm">Available on itch.io</p>
+            <p class="text-white text-sm font-medium">Play F4R</p>
+            <p class="text-white/50 text-xs">Available on itch.io</p>
           </div>
           <a
             href="https://dojisale.itch.io/f4r"
             target="_blank"
             rel="noopener noreferrer"
-            class="px-6 py-3 bg-white text-neutral-950 text-sm font-medium rounded-full hover:bg-neutral-200 transition-colors"
+            class="px-4 py-2 bg-white text-neutral-950 text-xs font-medium rounded-full hover:bg-neutral-200 transition-colors"
           >
             dojisale.itch.io/f4r →
           </a>
         </div>
       </div>
 
+    </div>
+
+    <!-- Character Design — full width -->
+    <div class="mt-24">
+      <div class="border-t border-white/20 pt-12 mb-10">
+        <h2 class="text-xs uppercase tracking-widest text-white mb-1">Character Design</h2>
+      </div>
+      <!-- Final Character renders -->
+      <div class="mt-10 grid grid-cols-2 gap-6">
+        <img src="/images/f4r-work/HighresScreenshot00003.png" alt="Final Character 1" class="w-full object-contain rounded-2xl" />
+        <img src="/images/f4r-work/HighresScreenshot00004.png" alt="Final Character 2" class="w-full object-contain rounded-2xl" />
+        <img src="/images/f4r-work/HighresScreenshot00006.png" alt="Final Character 3" class="w-full object-contain rounded-2xl" />
+        <img src="/images/f4r-work/HighresScreenshot00007.png" alt="Final Character 4" class="w-full object-contain rounded-2xl" />
+      </div>
+    </div>
+
+    <!-- VFX and Shader -->
+    <div class="mt-24">
+      <div class="border-t border-white/20 pt-12 mb-10">
+        <h2 class="text-xs uppercase tracking-widest text-white">VFX & Shader</h2>
+      </div>
+      <div class="flex flex-col gap-12">
+        <img src="/images/f4r-work/shader1.png" alt="VFX and Shader 1" class="w-full object-contain rounded-2xl" />
+        <img src="/images/f4r-work/shader2.png" alt="VFX and Shader 2" class="w-full object-contain rounded-2xl" />
+        <img src="/images/f4r-work/shader3.png" alt="VFX and Shader 3" class="w-full object-contain rounded-2xl" />
+        <img src="/images/f4r-work/shader4.png" alt="VFX and Shader 4" class="w-full object-contain rounded-2xl" />
+      </div>
+    </div>
+
+    <!-- Substance 3D Material -->
+    <div class="mt-24">
+      <div class="border-t border-white/20 pt-12 mb-10">
+        <h2 class="text-xs uppercase tracking-widest text-white">Substance 3D Material</h2>
+      </div>
+      <div class="flex flex-col gap-12">
+        <img src="/images/f4r-work/mat1.png" alt="Substance 3D Material 1" class="w-full object-contain rounded-2xl" />
+        <img src="/images/f4r-work/mat2.png" alt="Substance 3D Material 2" class="w-full object-contain rounded-2xl" />
+        <img src="/images/f4r-work/mat3.png" alt="Substance 3D Material 3" class="w-full object-contain rounded-2xl" />
+        <img src="/images/f4r-work/mat4.png" alt="Substance 3D Material 4" class="w-full object-contain rounded-2xl" />
+      </div>
+    </div>
+
+    <!-- Color Design & Rejected Concepts -->
+    <div class="mt-24">
+      <div class="border-t border-white/20 pt-12 mb-10">
+        <h2 class="text-xs uppercase tracking-widest text-white">Color Design & Rejected Concepts</h2>
+      </div>
+      <div class="flex flex-col gap-12">
+        <img src="/images/f4r-work/color1.png" alt="Color Design" class="w-full object-contain rounded-2xl" />
+        <img src="/images/f4r-work/color2.png" alt="Rejected Concept" class="w-full object-contain rounded-2xl" />
+      </div>
+    </div>
+
+    <!-- Team DoJiSaLe -->
+    <div class="mt-24">
+      <div class="border-t border-white/20 pt-12 mb-10">
+        <h2 class="text-xs uppercase tracking-widest text-white">Team DoJiSaLe</h2>
+      </div>
+      <div class="flex flex-col gap-12">
+        <img src="/images/f4r-work/team1.png" alt="Team DoJiSaLe 1" class="w-full object-contain rounded-2xl" />
+        <img src="/images/f4r-work/team2.png" alt="Team DoJiSaLe 2" class="w-full object-contain rounded-2xl" />
+        <img src="/images/f4r-work/team3.png" alt="Team DoJiSaLe 3" class="w-full object-contain rounded-2xl" />
+      </div>
     </div>
 
   </div>
