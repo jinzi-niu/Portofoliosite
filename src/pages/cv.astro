@@ -114,6 +114,38 @@ const skills = [
 ---
 
 <Layout title="Jinzi Niu">
+<style>
+  @media print {
+    /* Hide nav, footer, back button */
+    nav, footer { display: none !important; }
+
+    /* White background, black text */
+    body { background: white !important; color: black !important; }
+    .bg-neutral-950, .bg-neutral-900 { background: white !important; }
+
+    /* Text colors */
+    .text-white, h1, h2, h3, p, li, span, a { color: black !important; }
+    .text-neutral-400, .text-neutral-500, .text-neutral-600 { color: #444 !important; }
+    .text-neutral-300 { color: #222 !important; }
+    .text-blue-500 { color: #1a0dab !important; }
+
+    /* Borders */
+    .border-neutral-800 { border-color: #ccc !important; }
+
+    /* Remove top padding (no nav in print) */
+    .pt-28 { padding-top: 1rem !important; }
+
+    /* Fit to one page */
+    @page { size: A4; margin: 15mm; }
+    body { font-size: 11px !important; }
+
+    /* Remove rounded elements */
+    .rounded-full { border-radius: 50% !important; }
+
+    /* Logo backgrounds */
+    .bg-white\/10 { background: #eee !important; }
+  }
+</style>
   <div class="max-w-5xl mx-auto px-6 pt-28 pb-16">
 
     <!-- Header -->
@@ -126,7 +158,7 @@ const skills = [
           style="object-position: center 15%;"
         />
         <div>
-          <h1 class="text-4xl font-light text-white mb-1">Jinzi Niu</h1>
+          <h1 class="text-4xl font-light text-white mb-1">Jean (Jinzi) Niu</h1>
           <p class="text-neutral-400 text-sm">Game Design Student · Technical Artist · based Berlin</p>
         </div>
       </div>
