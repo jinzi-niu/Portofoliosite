@@ -29,9 +29,16 @@ import Layout from '../../layouts/Layout.astro';
       </a>
     </div>
 
-    <!-- Cover -->
-    <div class="mb-16 rounded-2xl overflow-hidden w-full">
-      <img src="/images/hypnagogia-cover.jpg" alt="Hypnagogia" class="w-full object-cover" />
+    <!-- Gameplay Video -->
+    <div class="mb-16 rounded-2xl overflow-hidden aspect-video w-full">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/_HO_d0RSSIU"
+        title="Hypnagogia — Gameplay Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
 
     <!-- Divider -->
@@ -87,20 +94,13 @@ import Layout from '../../layouts/Layout.astro';
       </ul>
     </div>
 
-    <!-- Gameplay Video -->
+    <!-- Cover Art -->
     <div class="mt-24">
       <div class="border-t border-neutral-800 pt-12 mb-10">
-        <h2 class="text-xs uppercase tracking-widest text-neutral-500">Gameplay</h2>
+        <h2 class="text-xs uppercase tracking-widest text-neutral-500">Cover Art</h2>
       </div>
-      <div class="rounded-2xl overflow-hidden aspect-video w-full">
-        <iframe
-          class="w-full h-full"
-          src="https://www.youtube.com/embed/_HO_d0RSSIU"
-          title="Hypnagogia — Gameplay Video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+      <div class="rounded-2xl overflow-hidden w-full">
+        <img src="/images/hypnagogia-cover.jpg" alt="Hypnagogia cover art" class="w-full object-cover" />
       </div>
     </div>
 
