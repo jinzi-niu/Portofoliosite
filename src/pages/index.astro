@@ -3,6 +3,10 @@ import Layout from '../layouts/Layout.astro';
 
 const projects = [
   {
+    title: "Hypnagogia",
+    image: "/images/hypnagogia-cover.jpg",
+  },
+  {
     title: "F4R",
     subtitle: "3D Racing Game",
     description: "A student 3D racing game built with Unreal Engine 5. Technical Artist, VFX, character design & modeling, sound design, and team project management.",
@@ -78,22 +82,24 @@ const projects = [
           </div>
 
           <!-- Content -->
-          <div class="relative z-10 flex gap-8 p-8 w-full">
+          <div class="relative z-10 flex gap-8 p-8 w-full min-h-52">
             <span class="text-neutral-600 text-3xl font-light shrink-0">0{i + 1}</span>
             <div class="flex-1">
               <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
                 <div>
                   <h2 class="text-xl font-medium text-white">{project.title}</h2>
-                  <p class="text-neutral-400 text-sm">{project.subtitle}</p>
+                  {project.subtitle && <p class="text-neutral-400 text-sm">{project.subtitle}</p>}
                 </div>
-                <span class="text-neutral-500 text-sm">{project.year}</span>
+                {project.year && <span class="text-neutral-500 text-sm">{project.year}</span>}
               </div>
-              <p class="text-neutral-300 text-sm leading-relaxed mb-4">{project.description}</p>
-              <div class="flex gap-2 flex-wrap">
-                {project.tags.map(tag => (
-                  <span class="px-3 py-1 bg-white/10 text-neutral-300 text-xs rounded-full">{tag}</span>
-                ))}
-              </div>
+              {project.description && <p class="text-neutral-300 text-sm leading-relaxed mb-4">{project.description}</p>}
+              {project.tags && (
+                <div class="flex gap-2 flex-wrap">
+                  {project.tags.map(tag => (
+                    <span class="px-3 py-1 bg-white/10 text-neutral-300 text-xs rounded-full">{tag}</span>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </a>
