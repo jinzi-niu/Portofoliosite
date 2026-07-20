@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(git -C /d/portfolio-jinziniu remote -v)",
-      "Bash(awk '{print $5, $9}')"
-    ]
-  }
-}
