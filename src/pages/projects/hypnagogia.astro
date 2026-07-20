@@ -12,7 +12,13 @@ import Layout from '../../layouts/Layout.astro';
 
     <!-- Header -->
     <div class="mb-16">
+      <p class="text-neutral-500 text-sm tracking-widest uppercase mb-4">3D First Person Horror Game</p>
       <h1 class="text-5xl md:text-6xl font-light text-white mb-6">Hypnagogia</h1>
+      <div class="flex gap-2 flex-wrap mb-8">
+        <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">3D</span>
+        <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">First Person</span>
+        <span class="px-3 py-1 bg-neutral-800 text-neutral-400 text-xs rounded-full">Horror Game</span>
+      </div>
       <a
         href="https://team-jelmi.itch.io/sap"
         target="_blank"
@@ -26,6 +32,59 @@ import Layout from '../../layouts/Layout.astro';
     <!-- Cover -->
     <div class="mb-16 rounded-2xl overflow-hidden w-full">
       <img src="/images/hypnagogia-cover.jpg" alt="Hypnagogia" class="w-full object-cover" />
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-neutral-800 mb-16"></div>
+
+    <!-- About -->
+    <div class="max-w-2xl">
+      <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-6">About the Project</h2>
+      <div class="text-neutral-300 leading-relaxed space-y-4">
+        <p>
+          Escape your recurring dream and this island. Survive by keeping your battery charged and
+          evading the presence that keeps you company. Turn on the stations and escape through the
+          door to wake up ... <span class="italic text-white">if you still know how.</span>
+        </p>
+        <p>
+          In <span class="italic text-white">SAP</span>, players are dropped onto a seemingly
+          abandoned island, and to stay alive they need to recharge their battery at one of the six
+          charging stations — each of which can only be used once. Each time a player interacts with
+          a charging station, the clock at the escape door ticks up, and upon reaching four, players
+          apparently can exit the dream. How long does it take you to escape?
+        </p>
+        <p>
+          The game can be played with a joystick and an NFC reader — in that way, players can really
+          feel like they're slotting a battery into one of our stations. Furthermore, SAP can be
+          controlled using a keyboard and mouse.
+        </p>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="mt-16 max-w-2xl">
+      <h2 class="text-xs uppercase tracking-widest text-neutral-500 mb-6">Keyboard Controls</h2>
+      <ul class="text-neutral-300 leading-relaxed space-y-3">
+        <li>
+          <span class="px-2 py-0.5 bg-neutral-800 text-neutral-200 text-xs rounded font-mono">WASD</span>
+          for movement and <span class="px-2 py-0.5 bg-neutral-800 text-neutral-200 text-xs rounded font-mono">Mouse</span>
+          for looking around
+        </li>
+        <li>
+          <span class="px-2 py-0.5 bg-neutral-800 text-neutral-200 text-xs rounded font-mono">SHIFT</span>
+          for flashlight
+        </li>
+        <li>
+          <span class="px-2 py-0.5 bg-neutral-800 text-neutral-200 text-xs rounded font-mono">Q</span>
+          to slot in the battery and <span class="px-2 py-0.5 bg-neutral-800 text-neutral-200 text-xs rounded font-mono">E</span>
+          to get it out
+        </li>
+        <li>
+          In the charging station interface use
+          <span class="px-2 py-0.5 bg-neutral-800 text-neutral-200 text-xs rounded font-mono">WASD</span>
+          to navigate the marble
+        </li>
+      </ul>
     </div>
 
     <!-- Gameplay Video -->
